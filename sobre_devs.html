@@ -7,6 +7,7 @@
         <style>
 
             @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
             * {
                 margin: 0;
@@ -17,7 +18,7 @@
 
             body {
                 height: 100%;
-                background: linear-gradient(to right, #0a0513, #180b31);
+                background: linear-gradient(to right, #0a0513, #2c1657);
             }
     
             header {
@@ -26,6 +27,7 @@
                 background-color: #0d0d0e;
                 display: flex;
                 color: aliceblue;
+                justify-content: space-between;
             }
 
             .div_logo {
@@ -45,15 +47,25 @@
             }
 
             .logo {
-                height: 50px;
-                width: 50px;
+                height: 60px;
+                width: 60px;
             }
 
             .titulo {
                 font-family: "Roboto Slab", serif;
-                font-size: 20px;
+                font-size: 25px;
                 margin-left: 5px;
-                text-shadow: 2px 2px #3f2077;
+                text-shadow: 3px 3px #3c2070;
+            }
+
+            .divteste{
+                justify-content: flex-end;
+                align-content: center;
+                margin-right: 10px;
+                font-family: "Roboto", sans-serif, cursive;
+                text-shadow: 3px 3px #3c2070;
+                font-size: 17px;
+                font-weight: bold;
             }
 
         </style>
@@ -67,7 +79,10 @@
                 <img class="logo" src="img/logo.png">
                 <h1 class="titulo">CDFLIX</h1>
             </div>
-            
+
+            <div class="divteste">
+                Página inicial
+            </div>
         </header>
 
         <footer>
