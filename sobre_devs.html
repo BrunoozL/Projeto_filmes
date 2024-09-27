@@ -68,6 +68,61 @@
                 font-weight: bold;
             }
 
+            .button{
+                background-color: #5d17eb;
+                color: #f0f8ff;
+                padding: 10px;
+                border-radius: 15px;
+                font-family: "Roboto", sans-serif, cursive;
+                text-shadow: 2px 2px #190938;
+                font-weight: bold;
+                box-shadow: 0px 5px #000000;
+            }
+
+            .divsbiografia{
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .img{
+                border: 5px inset #3c2070 ;
+                border-radius: 50%;
+                margin-top: 25px;
+                height: 300px;
+                width: 300px;
+            }
+
+            .divbruno{
+                background-color: #0d0d0e42;
+                font-family: "Roboto", sans-serif, cursive;
+                font-size: 18px;
+                color: #f0f8ff;
+                border-radius: 30px;        
+                text-shadow: 3px 3px #472c7e;
+                flex-wrap: wrap;
+                text-align: center;
+                margin-right: 50px;
+            }
+
+            .divcainan{
+                background-color: #0d0d0e42;
+                font-family: "Roboto", sans-serif, cursive;
+                font-size: 18px;
+                color: #f0f8ff;
+                border-radius: 30px;
+                text-shadow: 3px 3px #472c7e;
+                flex-wrap: wrap;
+                text-align: center;
+                margin-left: 50px;
+            }
+
+            h1{
+                color: #f0f8ff;
+                font-family: "Roboto", sans-serif, cursive;
+                text-shadow: 4px 4px #472c7e;
+                text-align: center;
+            }
+
         </style>
 
     </head>
@@ -81,9 +136,21 @@
             </div>
 
             <div class="divteste">
-                Página inicial
+                <a href="index.html"><button class="button" formaction="index.html">Voltar para o início</button></a>
             </div>
         </header>
+        <br>
+        <h1>Conheça nossa equipe!</h1><br>
+        <div class="divsbiografia">
+            <div class="divbruno">
+                <img src="img/bruno.png" class="img"><br><br>
+                Bruno Righi é um desenvolvedor web talentoso que iniciou sua carreira criando pequenos sites e blogs para empresas locais. Com o tempo, especializou-se em soluções personalizadas para e-commerce, desenvolvendo plataformas robustas e intuitivas. Seu foco está em entregar interfaces elegantes e funcionais, sempre buscando aprimorar a experiência do usuário em suas criações.
+            </div>
+            <div class="divcainan">
+                <img src="img/cainan.png" class="img"><br><br>
+                Cainã Bertolini, também desenvolvedor web, começou construindo ferramentas de automação para sites e, rapidamente, se destacou por suas habilidades em otimização de performance e SEO. Ao longo de sua carreira, trabalhou em grandes projetos para empresas internacionais, tornando-se referência em design responsivo e usabilidade web, sempre à frente das tendências tecnológicas na área.
+            </div>
+        </div>
 
         <footer>
             <h1>Oi</h1>
