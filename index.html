@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Menu</title>
+        <link rel="icon" href="img/logo.png" type="image/x-icon"/>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -26,6 +27,7 @@
                 display: flex;
                 color: aliceblue;
                 justify-content: space-between;
+                margin-bottom: 50px;
             }
 
             .div_logo {
@@ -46,18 +48,55 @@
                 text-shadow: 3px 3px #3c2070;
             }
 
-            .divfilmes{
+            .divfilmesacao {
                 display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
             }
 
-            .img{
-                height: 300px;
-                width: 300px;
+            .filmescover {
+                height: 500px;
+                width: 350px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 2px 2px #22123f;
+                margin-bottom: 10px;
+                transition: 0.5s;
             }
 
-            img {
-                height: 300px;
-                width: 300px;
+            .deadpool {
+                box-shadow: none;
+            }
+
+            .trembala {
+                box-shadow: none;
+            }
+
+            .divfilmesterror {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .hereditario {
+                box-shadow: none;
+            }
+
+            .itacoisa {
+                box-shadow: none;
+            }
+
+            .filmesdiv {
+                text-align: center;
+                margin-bottom: 100px;
+                font-family: "Roboto", sans-serif, cursive;
+                text-shadow: 2px 3px #472c7e;
+                color: #f0f8ff;
+                flex-wrap: wrap;
+                font-size: 25px;
+            }
+
+            .filmescover:hover {
+                transform: scale(1.1);
             }
 
         </style>
@@ -71,8 +110,35 @@
             </div>
         </header>
 
-        <div class="divfilmes">
-            <div class="img"><img src="img/big-poster-do-filme-deadpool-tamanho-90x-0-cm-loot-op-011-geek.png"></div>
+        <div class="divfilmesacao">
+            <div class="filmesdiv">
+                <a href="generos/acao/deadpool.html"><img class="filmescover deadpool" src="img/big-poster-do-filme-deadpool-tamanho-90x-0-cm-loot-op-011-geek.png"></a>
+                <p>Deadpool (2016)</p>
+            </div>
+            <div class="filmesdiv">
+                <a href="generos/acao/trem-bala.html"><img class="filmescover trembala" src="img/TREM BALA HE.jpeg"></a>
+                <p>Trem-Bala (2022)</p>
+            </div>
+            <div class="filmesdiv">
+                <a href="generos/acao/velozes-furiosos.html"><img class="filmescover" src="img/Velozes_e_Furiosos_-_Capa (1).png"></a>
+                <p>Velozes e Furiosos (2001)</p>
+            </div>
+        </div>
+
+        <div class="divfilmesterror">
+
+            <div class="filmesdiv">   
+                <a href="generos/terror/hereditario.html"><img class="filmescover hereditario" src="img/hereditario.png"></a>
+                <p>Hereditário (2018)</p>
+            </div>    
+            <div class="filmesdiv">
+                <a href="generos/terror/it-a-coisa.html"><img class="filmescover itacoisa" src="img/itacoisa.png"></a>
+                <p>It a Coisa (2017)</p>
+            </div>    
+            <div class="filmesdiv">
+                <a href="generos/terror/midsommar.html"><img class="filmescover" src="img/midsommar.png"></a>
+                <p>Midsommar (2019)</p>
+            </div>
         </div>
     
     </body>
