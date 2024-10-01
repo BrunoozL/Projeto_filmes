@@ -1,140 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Sobre nós</title>
-        <link rel="icon" href="img/logo.png" type="image/x-icon"/>
-        <style>
 
-            @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre nós | Cainã</title>
+    <link rel="icon" href="../img/a.png" type="image/x-icon" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                line-height: 1.5;
-            }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
 
-            body {
-                height: 100%;
-                background: linear-gradient(to right, #0a0513, #2c1657);
-            }
-    
-            header {
-                width: 100%;
-                height: 80px;
-                background-color: #0d0d0e;
-                display: flex;
-                color: #f0f8ff;
-                justify-content: space-between;
-            }
+        body {
+            height: 100%;
+            background: linear-gradient(to right, #0a0513, #2c1657);
+        }
 
-            .div_logo {
-                display: flex;
-                align-items: center;
-                margin-left: 10px;
-            }
+        header {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            color: #f0f8ff;
+        }
 
-            footer {
-                background-color: #000000;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                text-align: center;
-                color: aliceblue;
-            }
+        .div_logo {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
 
-            .logo {
-                height: 60px;
-                width: 60px;
-            }
+        footer {
+            background-color: #000000;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: aliceblue;
+        }
 
-            .titulo {
-                font-family: "Roboto Slab", serif;
-                font-size: 25px;
-                margin-left: 5px;
-                text-shadow: 3px 3px #3c2070;
-            }
+        .logo {
+            height: 50px;
+            width: 50px;
+        }
 
-            .divteste{
-                justify-content: flex-end;
-                align-content: center;
-                margin-right: 10px;
-                font-family: "Roboto", sans-serif, cursive;
-                text-shadow: 3px 3px #3c2070;
-                font-size: 17px;
-                font-weight: bold;
-            }
+        .titulo {
+            font-family: "Roboto Slab", serif;
+            font-size: 25px;
+            margin-left: 5px;
+            text-shadow: 3px 3px #3c2070;
+        }
 
-            .botao-voltar{
-                background-color: #5d17eb;
-                color: #f0f8ff;
-                padding: 10px;
-                border-radius: 15px;
-                font-family: "Roboto", sans-serif, cursive;
-                text-shadow: 2px 2px #190938;
-                font-weight: bold;
-                box-shadow: 0px 5px #000000;
-            }
-            
-            .img-cainan{
-                border: 5px inset #3c2070 ;
-                border-radius: 50%;
-                margin-top: 25px;
-                height: 300px;
-                width: 300px;
-            }
+        .divbotao {
+            align-content: center;
+            margin-left: 10px;
+            font-family: "Roboto", sans-serif, cursive;
+        }
+
+        .botao-voltar {
+            border: none;
+            background-color: transparent;
+            color: #f0f8ff;
+            border-radius: 100%;
+            height: 50px;
+            width: 50px;
+            font-family: "Roboto", sans-serif, cursive;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .botao-voltar:hover {
+            background-color: #2c1657;
+        }
+
+        .botao-voltar:active {
+            transform: scale(0.9);
+        }
+
+        .img-cainan {
+            border: 5px inset #3c2070;
+            border-radius: 50%;
+            margin-top: 25px;
+            height: 300px;
+            width: 300px;
+        }
 
 
-            .divcainan{
-                margin-right: 200px;
-                margin-left: 200px;
-                background-color: #0d0d0e42;
-                font-family: "Roboto", sans-serif, cursive;
-                font-size: 18px;
-                color: #f0f8ff;
-                border-radius: 30px;        
-                text-shadow: 3px 3px #472c7e;
-                text-align: center;
-                justify-content: center;
-            }
+        .divcainan {
+            margin-right: 200px;
+            margin-left: 200px;
+            background-color: #0d0d0e42;
+            font-family: "Roboto", sans-serif, cursive;
+            font-size: 18px;
+            color: #f0f8ff;
+            border-radius: 30px;
+            text-shadow: 3px 3px #472c7e;
+            text-align: center;
+            justify-content: center;
+        }
 
-            h1{
-                color: #f0f8ff;
-                font-family: "Roboto", sans-serif, cursive;
-                text-shadow: 4px 4px #472c7e;
-                text-align: center;
-            }
+        h1 {
+            color: #f0f8ff;
+            font-family: "Roboto", sans-serif, cursive;
+            text-shadow: 4px 4px #472c7e;
+            text-align: center;
+        }
+    </style>
 
-        </style>
+</head>
 
-    </head>
+<body>
 
-    <body>
+    <header>
 
-        <header>
-            <div class="div_logo">
-                <img class="logo" src="../img/logo.png">
-                <h1 class="titulo">CDFLIX</h1>
-            </div>
+        <div class="divbotao">
+            <a href="../index.html"><button class="botao-voltar">＜</button></a>
+        </div>
+        <div class="div_logo">
+            <img class="logo" src="../img/logo.png">
+            <h1 class="titulo">CDFLIX</h1>
+        </div>
 
-            <div class="divteste">
-                <a href="../index.html"><button class="botao-voltar">Voltar</button></a>
-            </div>
-        </header>
-        <br>
-        <h1>CAINÃ WELLINGTON BERTOLINI MONTOZA</h1><br>
-            <div class="divcainan">
-                <img src="../img/cainan.png" class="img-cainan"><br><br>
-                Cainã Bertolini, também desenvolvedor web, começou construindo ferramentas de automação para sites e, rapidamente, se destacou por suas habilidades em otimização de performance e SEO. Ao longo de sua carreira, trabalhou em grandes projetos para empresas internacionais, tornando-se referência em design responsivo e usabilidade web, sempre à frente das tendências tecnológicas na área.
-            </div>
+    </header>
+    <br>
+    <h1>CAINÃ WELLINGTON BERTOLINI MONTOZA</h1><br>
+    <div class="divcainan">
+        <img src="../img/cainan.png" class="img-cainan"><br><br>
+        Cainã Bertolini, também desenvolvedor web, começou construindo ferramentas de automação para sites e,
+        rapidamente, se destacou por suas habilidades em otimização de performance e SEO. Ao longo de sua carreira,
+        trabalhou em grandes projetos para empresas internacionais, tornando-se referência em design responsivo e
+        usabilidade web, sempre à frente das tendências tecnológicas na área.
+    </div>
 
-        <footer>
-            <h1>Oi</h1>
-            
-        </footer>
-    
-    </body>
+    <footer>
+        <h1>Oi</h1>
+
+    </footer>
+
+</body>
+
 </html>
