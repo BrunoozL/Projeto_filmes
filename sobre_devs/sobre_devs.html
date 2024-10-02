@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sobre nós | Cainã</title>
+    <title>Sobre nós</title>
     <link rel="icon" href="../img/a.png" type="image/x-icon" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
@@ -14,6 +14,8 @@
             padding: 0;
             box-sizing: border-box;
             line-height: 1.5;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
         }
 
         body {
@@ -34,14 +36,19 @@
             margin-left: 10px;
         }
 
-        footer {
-            background-color: #000000;
+        .rodape {
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
-            text-align: center;
-            color: aliceblue;
+            background: linear-gradient(to right, #0a0513, #251249);
+            border: 1px #000000 solid;
+            justify-content: end;
+            display: flex;
+            margin-top: 20px;
+            height: 50px;
+            border: 1;
+            align-items: center;
         }
 
         .logo {
@@ -83,7 +90,12 @@
             transform: scale(0.9);
         }
 
-        .img-cainan {
+        .divequipe {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .img {
             border: 5px inset #3c2070;
             border-radius: 50%;
             margin-top: 25px;
@@ -91,18 +103,37 @@
             width: 300px;
         }
 
-
-        .divcainan {
-            margin-right: 200px;
-            margin-left: 200px;
+        .divbruno {
             background-color: #0d0d0e42;
             font-family: "Roboto", sans-serif, cursive;
             font-size: 18px;
             color: #f0f8ff;
+            width: 400px;
+            height: 425px;
             border-radius: 30px;
             text-shadow: 3px 3px #472c7e;
+            flex-wrap: wrap;
             text-align: center;
-            justify-content: center;
+        }
+
+        .divcainan {
+            background-color: #0d0d0e42;
+            font-family: "Roboto", sans-serif, cursive;
+            font-size: 18px;
+            width: 400px;
+            height: 425px;
+            color: #f0f8ff;
+            border-radius: 30px;
+            text-shadow: 3px 3px #472c7e;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .titulo-equipe {
+            color: #f0f8ff;
+            font-family: "Roboto", sans-serif, cursive;
+            text-shadow: 4px 4px #472c7e;
+            text-align: center;
         }
 
         h1 {
@@ -111,6 +142,22 @@
             text-shadow: 4px 4px #472c7e;
             text-align: center;
         }
+
+        p {
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover
+        {
+            transition: all 1.3s;
+            background-color: #0a0a0a;
+            border-radius: 30px;
+        }
+
     </style>
 
 </head>
@@ -120,7 +167,7 @@
     <header>
 
         <div class="divbotao">
-            <a href="sobre_devs.html"><button class="botao-voltar">＜</button></a>
+            <a href="../index.html"><button class="botao-voltar">＜</button></a>
         </div>
         <div class="div_logo">
             <img class="logo" src="../img/logo.png">
@@ -128,19 +175,24 @@
         </div>
 
     </header>
-    <br>
-    <h1>CAINÃ WELLINGTON BERTOLINI MONTOZA</h1><br>
-    <div class="divcainan">
-        <img src="../img/cainan.png" class="img-cainan"><br><br>
-        Cainã Bertolini, também desenvolvedor web, começou construindo ferramentas de automação para sites e,
-        rapidamente, se destacou por suas habilidades em otimização de performance e SEO. Ao longo de sua carreira,
-        trabalhou em grandes projetos para empresas internacionais, tornando-se referência em design responsivo e
-        usabilidade web, sempre à frente das tendências tecnológicas na área.
+    <h1 class="titulo-equipe">Conheça nossa equipe!</h1> <br>
+    <div class="divequipe">
+        <a href="bruno.html">
+            <div class="divbruno">
+                <img src="../img/bruno.png" class="img">
+                <h1>Bruno Righi</h1>
+            </div>
+        </a>
+        <a href="cainan.html">
+            <div class="divcainan">
+                <img src="../img/cainan.png" class="img">
+                <h1>Cainã Wellington</h1>
+            </div>
+        </a>
     </div>
 
-    <footer>
-        <h1>Oi</h1>
-
+    <footer class="rodape">
+        <p>CdFlix ©2024</p>
     </footer>
 
 </body>
