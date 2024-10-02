@@ -1,62 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Menu</title>
-        <link rel="icon" href="../../img/logo.png" type="image/x-icon"/>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                line-height: 1.5;
-            }
+<head>
+    <meta charset="UTF-8">
+    <title>Trem Bala</title>
+    <link rel="icon" href="../../img/a.png" type="image/x-icon" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-            body {
-                height: 100%;
-                background: linear-gradient(to right, #0a0513, #2c1657);
-            }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.5;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+        }
 
-            header {
-                width: 100%;
-                height: 80px;
-                background-color: #0d0d0e;
-                display: flex;
-                color: aliceblue;
-                justify-content: space-between;
-            }
+        body {
+            height: 100%;
+            background: linear-gradient(to right, #0a0513, #2c1657);
+        }
 
-            .div_logo {
-                display: flex;
-                align-items: center;
-                margin-left: 10px;
-            }
+        header {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            color: aliceblue;
+            margin-bottom: 20px;
+        }
 
-            .logo {
-                height: 60px;
-                width: 60px;
-            }
+        .div_logo {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
 
-            .titulo {
-                font-family: "Roboto Slab", serif;
-                font-size: 25px;
-                margin-left: 5px;
-                text-shadow: 3px 3px #3c2070;
-            }
+        .logo {
+            height: 50px;
+            width: 50px;
+        }
 
-        </style>
-    </head>
+        .titulo {
+            font-family: "Roboto Slab", serif;
+            font-size: 25px;
+            margin-left: 5px;
+            text-shadow: 3px 3px #3c2070;
+        }
 
-    <body>
-        <header>
-            <div class="div_logo">
-                <img class="logo" src="../../img/logo.png">
-                <h1 class="titulo">CDFLIX</h1>
-            </div>
-        </header>
-    
-    </body>
+        .div-conteudo {
+            border: 1px #000000 solid;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px #000000;
+            display: flex;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+
+        .div-imagem {
+            justify-content: center;
+        }
+
+        .imagem {
+            height: 600px;
+            width: auto;
+        }
+
+        .div-texto {
+            justify-content: center;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        .titulo-filme {
+            color: aliceblue;
+            font-size: 25px;
+        }
+
+        .data-lancado
+        {
+            font-size: 16px;
+            color: #f0f8ff6c;
+            margin-bottom: 25px;
+        }
+
+        h2
+        {
+            font-size: 20px;
+        }
+
+        p 
+        {
+            margin-bottom: 30px;
+        }
+
+       /* .rodape
+        {
+            justify-content: center;
+            display: flex;
+            background-color: #000000;
+            position: relative;
+            left: 0;
+            bottom: 0;
+            text-align: center;
+        } */
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="div_logo">
+            <img class="logo" src="../../img/logo.png">
+            <h1 class="titulo">CDFLIX</h1>
+        </div>
+    </header>
+
+    <div class="div-conteudo">
+        <div class="div-imagem">
+            <img class="imagem" src="../../img/TREM_BALA_HE.jpeg">
+        </div>
+
+        <div class="div-texto">
+            <h1 class="titulo-filme">Trem Bala</h1>
+            <h3 class="data-lancado">04/08/2022</h3>
+            <h2>Sinopse: </h2>
+            <p>Cinco assassinos se encontram em um trem-bala partindo de Tóquio a Morioka. O transporte conta com apenas algumas paradas durante o trajeto e os homicidas descobrem que suas missões estão relacionadas. Resta descobrir quem sairá vivo do trem e o que os espera na última estação.</p>
+            <h2>Elenco: </h2>
+            <p> Brad Pitt … Ladybug <br>
+                Joey King … Prince <br>
+                Aaron Taylor-Johnson … Tangerine <br>
+                Sandra Bullock … Maria <br>
+                Brian Tyree Henry … Lemon <br>
+                Andrew Koji … Kimura</p>
+            <h2>Ficha Técnica: </h2>
+            <p>
+                Título no Brasil: Trem-Bala <br>
+                Título Original Bullet Train <br>
+                Ano Lançamento 2022 <br>
+                Gênero Ação / Suspense <br>
+                País de Origem Japão / EUA <br>
+                Duração 126 minutos <br>
+                Direção David Leitch</p>
+        </div>
+    </div>
+
+   <!-- <footer class="rodape">
+        <h1>oi</h1>
+    </footer> -->
+
+</body>
+
 </html>

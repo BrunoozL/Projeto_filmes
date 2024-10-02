@@ -1,62 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Menu</title>
-        <link rel="icon" href="../../img/logo.png" type="image/x-icon"/>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                line-height: 1.5;
-            }
+<head>
+    <meta charset="UTF-8">
+    <title>Deadpool</title>
+    <link rel="icon" href="../../img/a.png" type="image/x-icon" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-            body {
-                height: 100%;
-                background: linear-gradient(to right, #0a0513, #2c1657);
-            }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.5;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+        }
 
-            header {
-                width: 100%;
-                height: 80px;
-                background-color: #0d0d0e;
-                display: flex;
-                color: aliceblue;
-                justify-content: space-between;
-            }
+        body {
+            height: 100%;
+            background: linear-gradient(to right, #0a0513, #2c1657);
+        }
 
-            .div_logo {
-                display: flex;
-                align-items: center;
-                margin-left: 10px;
-            }
+        header {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            color: aliceblue;
+            margin-bottom: 20px;
+        }
 
-            .logo {
-                height: 60px;
-                width: 60px;
-            }
+        .div_logo {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
 
-            .titulo {
-                font-family: "Roboto Slab", serif;
-                font-size: 25px;
-                margin-left: 5px;
-                text-shadow: 3px 3px #3c2070;
-            }
+        .logo {
+            height: 50px;
+            width: 50px;
+        }
 
-        </style>
-    </head>
+        .titulo {
+            font-family: "Roboto Slab", serif;
+            font-size: 25px;
+            margin-left: 5px;
+            text-shadow: 3px 3px #3c2070;
+        }
 
-    <body>
-        <header>
-            <div class="div_logo">
-                <img class="logo" src="../../img/logo.png">
-                <h1 class="titulo">CDFLIX</h1>
-            </div>
-        </header>
-    
-    </body>
+        .div-conteudo {
+            border: 1px #000000 solid;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px #000000;
+            display: flex;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+
+        .div-imagem {
+            justify-content: center;
+        }
+
+        .imagem {
+            height: 600px;
+            width: auto;
+        }
+
+        .div-texto {
+            justify-content: center;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        .titulo-filme {
+            color: aliceblue;
+            font-size: 25px;
+        }
+
+        .data-lancado
+        {
+            font-size: 16px;
+            color: #f0f8ff6c;
+            margin-bottom: 25px;
+        }
+
+        h2
+        {
+            font-size: 20px;
+        }
+
+        p 
+        {
+            margin-bottom: 30px;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="div_logo">
+            <img class="logo" src="../../img/logo.png">
+            <h1 class="titulo">CDFLIX</h1>
+        </div>
+    </header>
+
+    <div class="div-conteudo">
+        <div class="div-imagem">
+            <img class="imagem" src="../../img/big-poster-do-filme-deadpool-tamanho-90x-0-cm-loot-op-011-geek.png">
+        </div>
+
+        <div class="div-texto">
+            <h1 class="titulo-filme">Deadpool</h1>
+            <h3 class="data-lancado">11/02/2016</h3>
+            <h2>Sinopse: </h2>
+            <p>Adaptação dos quadrinhos sobre o mercenário tagarela da Marvel. Um ex-agente das forças especiais se torna mercenário e é submetido a experimentos ilegais que lhe proporcionam poderes de cura acelerada. Ele, então, adota o nome Deadpool (Ryan Reybolds).</p>
+            <h2>Elenco: </h2>
+            <p> Ryan Reynolds … Wade / Deadpool <br>
+                Karan Soni … Dopinder <br>
+                Ed Skrein … Ajax <br>
+                Michael Benyaer … Warlord <br>
+                Stefan Kapicic … Colossus (voz) </p>
+            <h2>Ficha Técnica: </h2>
+            <p>
+                Título no Brasil: Deadpool <br>
+                Título Original: Deadpool <br>
+                Ano do Lançamento: 2016 <br>
+                Gênero: Ação / Aventura / Ficção <br>
+                País de Origem: EUA / Canadá <br>
+                Tempo de Duração: 108 minutos <br>
+                Direção: Tim Miller</p>
+        </div>
+    </div>
+
+</body>
+
 </html>
