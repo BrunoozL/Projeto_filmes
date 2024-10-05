@@ -1,0 +1,191 @@
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.5;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+        }
+
+        body {
+            height: 100%;
+            background-color: #171717;
+        }
+
+        header {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            color: #f0f8ff;
+        }
+
+        .div_logo {
+            display: flex;
+            align-items: center;
+            margin-left: 75px;
+            margin-top: 25px;
+            position: absolute;
+        }
+
+        .rodape {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #141414;
+            border: 1px #000000 solid;
+            justify-content: end;
+            display: flex;
+            margin-top: 20px;
+            height: 50px;
+            border: 1;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            height: 50px;
+            width: 50px;
+        }
+
+        .titulo {
+            font-family: "Roboto Slab", serif;
+            font-size: 25px;
+            margin-left: 5px;
+            text-shadow: 3px 3px #12246c;
+        }
+
+        .divbotao {
+            align-content: center;
+            margin-left: 15px;
+            margin-top: 25px;
+            position: absolute;
+            font-family: "Roboto", sans-serif, cursive;
+        }
+
+        .botao-voltar {
+            border: none;
+            background-color: #171717;
+            color: #f0f8ff;
+            border-radius: 100%;
+            height: 50px;
+            width: 50px;
+            font-family: "Roboto", sans-serif, cursive;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .botao-voltar:hover {
+            background-color: #12246c;
+        }
+
+        .botao-voltar:active {
+            transform: scale(0.9);
+        }
+
+        hr  {
+            border: none;
+            height: 2px;
+            background-color: #000000;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .divequipe {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .img {
+            border: 5px inset #12246c;
+            border-radius: 50%;
+            margin-top: 25px;
+            height: 300px;
+            width: 300px;
+        }
+
+        .divbruno {
+            background-color: #0d0d0e42;
+            font-family: "Roboto", sans-serif, cursive;
+            font-size: 18px;
+            color: #fff;
+            width: 400px;
+            height: 425px;
+            border-radius: 30px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .divcainan {
+            background-color: #0d0d0e42;
+            font-family: "Roboto", sans-serif, cursive;
+            font-size: 18px;
+            width: 400px;
+            height: 425px;
+            color: #fff;
+            border-radius: 30px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .titulo-equipe {
+            color: #fff;
+            font-family: "Roboto", sans-serif, cursive;
+            text-shadow: 4px 4px #12246c;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            font-family: "Roboto", sans-serif, cursive;
+            text-shadow: 4px 4px #12246c;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        a:hover
+        {
+            transition: all 0.3s;
+            background-color: #101010;
+        }
+
+        .menu {
+            flex-grow: 1;
+            text-align: center;
+            align-items: center;
+        }
+
+        .menu ul {
+            margin-top: 35px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        li + li {
+            margin-left: 40px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #007BFF;
+        }
+
+        .selecionado {
+            box-shadow: #007BFF 0px 1px;
+            border-radius: 0;
+        }
