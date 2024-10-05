@@ -14,18 +14,19 @@
                 box-sizing: border-box;
                 line-height: 1.5;
                 font-family: Arial, Helvetica, sans-serif;
+                color: #fff;
             }
 
             body {
                 height: 100%;
-                background: linear-gradient(to right, #0a0513, #2c1657);
+                background-color: #171717;
             }
 
             header {
                 width: 100%;
                 height: 80px;
                 display: flex;
-                color: aliceblue;
+                color: #fff;
                 justify-content: space-between;
                 margin-bottom: 30px;
             }
@@ -33,7 +34,9 @@
             .div_logo {
                 display: flex;
                 align-items: center;
-                margin-left: 10px;
+                margin-left: 15px;
+                margin-top: 25px;
+                position: absolute;
             }
 
             .logo {
@@ -45,7 +48,23 @@
                 font-family: "Roboto Slab", serif;
                 font-size: 25px;
                 margin-left: 5px;
-                text-shadow: 3px 3px #3c2070;
+                text-shadow: 3px 3px #12246c;
+            }
+
+            .rodape {
+                position: relative;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #141414;
+                border: 1px #000000 solid;
+                justify-content: end;
+                display: flex;
+                margin-top: 20px;
+                height: 50px;
+                border: 1;
+                align-items: center;
+                justify-content: center;
             }
 
             .divfilmesacao {
@@ -58,7 +77,7 @@
                 height: 500px;
                 width: 350px;
                 border-radius: 10px;
-                box-shadow: 2px 2px 2px 2px #22123f;
+                box-shadow: 2px 2px 2px 2px #12246c;
                 margin-bottom: 10px;
                 transition: 0.5s;
             }
@@ -89,14 +108,15 @@
                 text-align: center;
                 margin-bottom: 100px;
                 font-family: "Roboto", sans-serif, cursive;
-                text-shadow: 2px 3px #472c7e;
-                color: #f0f8ff;
+                text-shadow: 2px 3px #12246c;
+                color: #fff;
                 flex-wrap: wrap;
                 font-size: 25px;
             }
 
-            .filmescover:hover {
+            .filmesdiv:hover {
                 transform: scale(1.1);
+                transition: 0.5s;
             }
 
             hr  
@@ -107,13 +127,44 @@
                 margin-bottom: 30px;
             }
 
-
             .titulo-categ
             {
-                color: azure;
+                color: #fff;
                 text-align: center;
                 font-family: Arial, Helvetica, sans-serif;
                 margin-bottom: 30px;
+            }
+
+            .menu {
+                flex-grow: 1;
+                text-align: center;
+                align-items: center;
+            }
+
+            .menu ul {
+                margin-top: 35px;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                font-size: 20px;
+            }
+
+            li + li {
+                margin-left: 40px;
+            }
+
+            .menu a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+            }
+
+            .menu a:hover {
+                color: #007BFF;
+            }
+
+            .selecionado {
+                box-shadow: #007BFF 0px 1px;
             }
 
         </style>
@@ -125,16 +176,30 @@
                 <img class="logo" src="img/logo.png">
                 <h1 class="titulo">CDFLIX</h1>
             </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a class="selecionado" href="index.html">HOME</a>
+                    </li>
+
+                    <li>
+                        <a href="sobre_devs/sobre_devs.html">SOBRE</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
+
+        <hr>
 
         <h1 class="titulo-categ">Ação</h1>
         <div class="divfilmesacao">
             <div class="filmesdiv">
-                <a href="generos/acao/deadpool.html"><img class="filmescover deadpool" src="img/big-poster-do-filme-deadpool-tamanho-90x-0-cm-loot-op-011-geek.png"></a>
+                <a href="generos/acao/deadpool.html"><img class="filmescover" src="img/big-poster-do-filme-deadpool-tamanho-90x-0-cm-loot-op-011-geek.png"></a>
                 <p>Deadpool (2016)</p>
             </div>
             <div class="filmesdiv">
-                <a href="generos/acao/trem-bala.html"><img class="filmescover trembala" src="img/TREM_BALA_HE.jpeg"></a>
+                <a href="generos/acao/trem-bala.html"><img class="filmescover" src="img/TREM_BALA_HE.jpeg"></a>
                 <p>Trem-Bala (2022)</p>
             </div>
             <div class="filmesdiv">
@@ -149,11 +214,11 @@
         <div class="divfilmesterror">
 
             <div class="filmesdiv">   
-                <a href="generos/terror/hereditario.html"><img class="filmescover hereditario" src="img/hereditario.png"></a>
+                <a href="generos/terror/hereditario.html"><img class="filmescover" src="img/hereditario.png"></a>
                 <p>Hereditário (2018)</p>
             </div>    
             <div class="filmesdiv">
-                <a href="generos/terror/it-a-coisa.html"><img class="filmescover itacoisa" src="img/itacoisa.png"></a>
+                <a href="generos/terror/it-a-coisa.html"><img class="filmescover" src="img/itacoisa.png"></a>
                 <p>It a Coisa (2017)</p>
             </div>    
             <div class="filmesdiv">
@@ -161,6 +226,10 @@
                 <p>Midsommar (2019)</p>
             </div>
         </div>
+
+        <footer class="rodape">
+            <p>CdFlix ©2024</p>
+        </footer>
     
     </body>
 </html>
